@@ -1,18 +1,26 @@
 import React from "react";
 import { SearchIcon } from "@chakra-ui/icons";
-import { Flex, InputGroup, InputLeftElement} from "@chakra-ui/layout";
+import { Flex, InputGroup, InputLeftElement, Input } from "@chakra-ui/react";
 
 type SearchInputProps = {
-  // user:
+  // user: User;
 };
 
-const SearchInput: React.FC<SearchInputProps> = () => {
-  return (
-    <Flex>
-      <InputGroup>
+const SearchInput: React.FC<SearchInputProps> = ({ user }) => {
+  return (1
+    <Flex flexGrow={1} mr={2} align="center">
+      maxWidth={user ? "auto" : "600px"}
+      mr={2}
+      alignItems="center"
+      >
+    <InputGroup>
         <InputLeftElement
           pointerEvents="none"
-          children={<SearchIcon color="gray.400" />
+          color="gray.400"
+          children={<SearchIcon mb={2} />}
+        >
+          <SearchIcon mb={2} />
+        </InputLeftElement>
         <Input
           placeholder="Search"
           fontsize="10pt"
