@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@chakra-ui/button": "^2.0.16",
     "@chakra-ui/c-flex": "^1.0.0-alpha.14",
     "@chakra-ui/icons": "^2.0.17",
     "@chakra-ui/image": "^2.0.15",
@@ -20,11 +21,13 @@
     "cra-template-react-declarative": "^2.2.17",
     "eslint-plugin-jsx-a11y": "^6.7.1",
     "firebase": "^9.17.1",
+    "flexbox": "^0.0.3",
     "framer-motion": "^10.0.1",
     "next": "12.2.0",
     "polished": "^4.2.2",
     "prettier": "^2.8.4",
     "react": "18.2.0",
+    "react_css_flex_tool": "^0.0.13",
     "react-dom": "^18.2.0",
     "recoil": "^0.7.6",
     "rxjs": "^7.8.0"

@@ -6,13 +6,9 @@ type SearchInputProps = {
   // user: User;
 };
 
-const SearchInput: React.FC<SearchInputProps> = ({ user }) => {
-  return (1
-    <Flex flexGrow={1} mr={2} align="center">
-      maxWidth={user ? "auto" : "600px"}
-      mr={2}
-      alignItems="center"
-      >
+export const SearchInput: React.FC<SearchInputProps> = ({ user }) => {
+  return (
+<Flex flexGrow={1} mr={2} align="center">
     <InputGroup>
         <InputLeftElement
           pointerEvents="none"
@@ -22,8 +18,8 @@ const SearchInput: React.FC<SearchInputProps> = ({ user }) => {
           <SearchIcon mb={2} />
         </InputLeftElement>
         <Input
-          placeholder="Search"
-          fontsize="10pt"
+          placeholder="Enter a model name"
+          fontSize="10pt"
           _placeholder={{ color: "gray.500"}}
           _hover={{
             bg: "white",
