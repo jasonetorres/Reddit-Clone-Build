@@ -8,6 +8,7 @@ type AuthButtonsProps = {};
 
 const AuthButtons: React.FC<AuthButtonsProps> = () => {
   const setAuthModalState = useSetRecoilState(authModalState);
+
   return (
     <>
       <Button
@@ -21,7 +22,7 @@ const AuthButtons: React.FC<AuthButtonsProps> = () => {
         Log In
       </Button>
       <Button
-        variant="outline"
+        variant="solid"
         height="28px"
         display={{ base: "none", sm: "flex" }}
         width={{ base: "70px", md: "110px" }}
