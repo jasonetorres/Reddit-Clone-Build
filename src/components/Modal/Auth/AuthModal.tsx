@@ -3,11 +3,11 @@ import {
 } from "@chakra-ui/react";
 import React from "react";
 import { useRecoilState } from "recoil";
-import { authModalState } from "../../../atoms/authModalAtom";
+import { AuthModalState } from "../../../atoms/authModalAtom";
 import AuthInputs from "./AuthInputs";
 
 export const AuthModal: React.FC = () => {
-  const [modalState, setModalState] = useRecoilState(authModalState);
+  const [modalState, setModalState] = useRecoilState(AuthModalState);
 
   
 

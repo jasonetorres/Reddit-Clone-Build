@@ -29,6 +29,7 @@
     "react": "18.2.0",
     "react_css_flex_tool": "^0.0.13",
     "react-dom": "^18.2.0",
+    "react-firebase-hooks": "^5.1.1",
     "recoil": "^0.7.6",
     "rxjs": "^7.8.0"
   },

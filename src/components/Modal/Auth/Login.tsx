@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { Input, Button, Flex, Text } from "@chakra-ui/react";
-import { AuthModalState } from "../../Modal/Auth/AuthModal";
-import useRecoilState from 'recoil';
+import { Button, Input, Flex, Text } from "@chakra-ui/react";
+import { AuthModalState } from "../../../atoms/authModalAtom";
+import { useRecoilState } from 'recoil';
 
 
 type LoginProps = {
@@ -9,7 +9,7 @@ type LoginProps = {
 };
 
 const Login: React.FC<LoginProps> = ({ user }) => {
-const [authModalState, setAuthModalState] = useRecoilState(AuthModalState);
+const [AuthModalState, setAuthModalState] = useRecoilState(AuthModalState);
   const [loginForm, setLoginForm] = useState({
     email: "",
     password: "",
